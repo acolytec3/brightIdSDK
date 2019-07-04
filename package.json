@@ -5,6 +5,7 @@
     "name": "name",
     "email": "email@domain.com"
   },
+  "main": "dist/index.js",
   "description": "your typescript library description",
   "keywords": [
     "typescript"

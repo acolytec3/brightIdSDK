@@ -1,6 +1,7 @@
 {
   "name": "typescript-node-lib",
   "version": "0.0.0",
+  "licence": "MIT",
   "author": {
     "name": "name",
     "email": "email@domain.com"

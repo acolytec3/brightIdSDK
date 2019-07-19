@@ -3,6 +3,21 @@ typescript-node-lib
 
 My library description
 
+# Features
+
+Add your library features here.
+
+This template already has (out of the box):
+
+* preconfigured jest (with ts-jest) for testing your library
+* travis-ci configuration, just add your repo to travis and you have done
+* codecov setup
+* tsconfig.json configurated for node.js libraries
+* eslint/prettier you have eslint/prettier preconfigured, your code will be linted at commit time automatically
+* github issue templates, they are already there, just configure them
+* contributing guidelines and code of conduct are already setupped
+* size-limit script, for checking the weight of your library
+
 # Install
 
 ```bash

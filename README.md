@@ -1,13 +1,13 @@
-typescript-node-lib
-===================
+typescript library template
+===========================
 
-My library description
+Your library description
 
-# Features
+# Features 🎉
 
 Add your library features here.
 
-This template already has (out of the box):
+📦 This template already has (out of the box):
 
 * preconfigured jest (with ts-jest) for testing your library
 * travis-ci configuration, just add your repo to travis and you have done
@@ -18,7 +18,7 @@ This template already has (out of the box):
 * contributing guidelines and code of conduct are already setupped
 * size-limit script, for checking the weight of your library
 
-# Install
+# Install ⚙️
 
 ```bash
 # npm
@@ -28,11 +28,11 @@ npm i mylib
 yarn add mylib
 ```
 
-# Usage
+# Usage 🔍
 
 Put my library usage guide here
 
-# Contributing
+# Contributing ❤️
 
 Every contribution is really welcome!
 
@@ -42,6 +42,6 @@ If you want to fork and open a pull request (adding features or fixes), feel fre
 
 Read the [contributing guidelines](./CONTRIBUTING.md)
 
-# Licence
+# Licence 📃
 
 Read the [licence](./LICENCE)

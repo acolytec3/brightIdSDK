@@ -17,6 +17,7 @@ Add your library features here.
 * github issue templates, they are already there, just configure them
 * contributing guidelines and code of conduct are already setupped
 * size-limit script, for checking the weight of your library
+* automatic docs generation with [typedoc](https://github.com/TypeStrong/typedoc)
 
 # Install ⚙️
 
@@ -27,6 +28,10 @@ npm i mylib
 # yarn
 yarn add mylib
 ```
+
+# Docs
+
+You can read docs [here](./docs/README.md), just remember to run your `npm run docs` script.
 
 # Usage 🔍
 

@@ -3,7 +3,7 @@ typescript library template
 
 Your library description
 
-# Features 🎉
+# 🎉 Features
 
 Add your library features here.
 
@@ -20,7 +20,7 @@ Add your library features here.
 * size-limit script, for checking the weight of your library
 * automatic docs generation with [typedoc](https://github.com/TypeStrong/typedoc)
 
-# Install ⚙️
+# ⚙ Install
 
 ```bash
 # npm
@@ -30,15 +30,15 @@ npm i mylib
 yarn add mylib
 ```
 
-# Docs
+# 📖 Docs
 
 You can read docs [here](./docs/README.md), just remember to run your `npm run docs` script.
 
-# Usage 🔍
+# 🔍 Usage
 
 Put my library usage guide here
 
-# Contributing ❤️
+# ️❤️ Contributing
 
 Every contribution is really welcome!
 
@@ -48,6 +48,6 @@ If you want to fork and open a pull request (adding features or fixes), feel fre
 
 Read the [contributing guidelines](./CONTRIBUTING.md)
 
-# Licence 📃
+# 📃 Licence
 
 Read the [licence](./LICENCE)

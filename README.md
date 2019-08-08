@@ -10,6 +10,7 @@ Add your library features here.
 📦 This template already has (out of the box):
 
 * preconfigured jest (with ts-jest) for testing your library
+* azure dev-ops configuration
 * travis-ci configuration, just add your repo to travis and you have done
 * codecov setup
 * tsconfig.json configurated for node.js libraries

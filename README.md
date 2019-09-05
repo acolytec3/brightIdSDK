@@ -10,6 +10,7 @@ Add your library features here.
 📦 This template already has (out of the box):
 
 * preconfigured jest (with ts-jest) for testing your library
+* preconfigured benchmarks with benchmark.js
 * azure dev-ops configuration
 * travis-ci configuration, just add your repo to travis and you have done
 * codecov setup
@@ -19,6 +20,7 @@ Add your library features here.
 * contributing guidelines and code of conduct are already setupped
 * size-limit script, for checking the weight of your library
 * automatic docs generation with [typedoc](https://github.com/TypeStrong/typedoc)
+* automatic changelog generation with standard-changelog
 
 # ⚙ Install
 
@@ -37,6 +39,17 @@ You can read docs [here](./docs/README.md), just remember to run your `npm run d
 # 🔍 Usage
 
 Put my library usage guide here
+
+Predefined scripts:
+
+- benchmarks: runs all your benchmarks
+- changelog: creates a changelog (using standard-changelog)
+- docs: creates docs from your jsdocs
+- lint: lints your code
+- prepublishOnly: builds your sources for deployment (to npm)
+- size-limit: checks your bundle size limit
+- test: run tests 
+- upgrade-interactive: updgrades your dependencies interactively (like with yarn)
 
 # ️❤️ Contributing
 

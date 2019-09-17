@@ -16,7 +16,7 @@
     "changelog": "standard-changelog",
     "docs": "typedoc --options typedoc.markdown.json",
     "lint": "eslint -c ./.eslintrc.json src/**/*.ts --fix",
-    "prepublishOnly": "tsc -p .",
+    "prepublishOnly": "tsc -p tsconfig.npm.json",
     "size-limit": "tsc -p . && size-limit",
     "test": "jest",
     "upgrade-interactive": "npm-check --update"

@@ -14,10 +14,11 @@
   "scripts": {
     "benchmarks": "ts-node benchmarks",
     "changelog": "standard-changelog",
-    "docs": "typedoc --options typedoc.markdown.json",
+    "clean": "rimraf dist",
+    "docs": "npm run clean && typedoc --options typedoc.markdown.json",
     "lint": "eslint -c ./.eslintrc.json src/**/*.ts --fix",
-    "prepublishOnly": "tsc -p tsconfig.npm.json",
-    "size-limit": "tsc -p . && size-limit",
+    "prepublishOnly": "npm run clean && tsc -p tsconfig.npm.json",
+    "size-limit": "npm run clean && tsc -p . && size-limit",
     "test": "jest",
     "upgrade-interactive": "npm-check --update"
   },
@@ -45,6 +46,8 @@
     }
   ],
   "devDependencies": {
+    "@size-limit/preset-small-lib": "^2.1.6",
+    "@size-limit/time": "^2.1.6",
     "@types/benchmark": "^1.0.31",
     "@types/jest": "^24.0.18",
     "@types/node": "^12.7.5",
@@ -58,7 +61,7 @@
     "lint-staged": "^9.2.5",
     "npm-check": "^5.9.0",
     "prettier": "^1.18.2",
-    "size-limit": "^2.1.5",
+    "rimraf": "^3.0.0",
     "standard-changelog": "^2.0.13",
     "ts-jest": "^24.1.0",
     "ts-node": "^8.3.0",

@@ -1,15 +1,15 @@
 {
-  "name": "typescript-node-lib",
-  "version": "0.0.0",
+  "name": "brightid_sdk",
+  "version": "0.0.1",
   "licence": "MIT",
   "author": {
-    "name": "name",
-    "email": "email@domain.com"
+    "name": "acolytec3"
   },
   "main": "dist/index.js",
-  "description": "your typescript library description",
+  "description": "A typescript library for simplifying integration of applications with BrightID",
   "keywords": [
-    "typescript"
+    "typescript",
+    "brightid"
   ],
   "scripts": {
     "benchmarks": "ts-node benchmarks",
@@ -22,10 +22,10 @@
     "test": "jest",
     "upgrade-interactive": "npm-check --update"
   },
-  "homepage": "https://github.com/yourname/yourrepo#readme",
+  "homepage": "https://github.com/acolytec3/brightIdSDK",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yourname/yourrepo.git"
+    "url": "git+https://github.com/acolytec3/brightIdSDK.git"
   },
   "husky": {
     "hooks": {
@@ -68,5 +68,11 @@
     "typedoc": "^0.17.6",
     "typedoc-plugin-markdown": "^2.2.17",
     "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "axios": "^0.21.0",
+    "base64-js": "^1.5.1",
+    "fast-json-stable-stringify": "^2.1.0",
+    "tweetnacl": "^1.0.3"
   }
 }

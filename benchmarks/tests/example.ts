@@ -1,18 +1,16 @@
-import benchmark from 'benchmark';
-import { mylib } from '../../src';
+import benchmark from "benchmark";
+import { sponsor } from "../../src";
 
 export function run(suite: benchmark.Suite, options: benchmark.Options) {
-  suite
-    .add('mylib#fn', () => mylib())
+  suite.add("sponsor#fn", () => sponsor("", "TestApp", "abc"));
 
   suite
-    .on('cycle', function (event: benchmark.Event) {
+    .on("cycle", function (event: benchmark.Event) {
       console.log(String(event.target));
     })
-    .on('complete', function (this: benchmark.Suite) {
-      console.log('end')
-    })
-    ;
+    .on("complete", function (this: benchmark.Suite) {
+      console.log("end");
+    });
 
   suite.run(options);
 }

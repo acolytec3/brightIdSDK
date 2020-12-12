@@ -1,5 +1,16 @@
-export function mylib(): void {}
+import {
+  generateDeeplink,
+  verifyContextId,
+  sponsor,
+  availableSponsorships,
+} from "./appMethods";
+import { putTestingBlock, removeTestingBlock } from "./testMethods";
 
-export default {
-  mylib
+export {
+  generateDeeplink,
+  verifyContextId,
+  sponsor,
+  availableSponsorships,
+  putTestingBlock,
+  removeTestingBlock,
 };

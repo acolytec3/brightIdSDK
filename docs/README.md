@@ -1,6 +1,6 @@
-[typescript-node-lib](README.md)
+[brightid_sdk](README.md)
 
-# typescript-node-lib
+# brightid_sdk
 
 ## Index
 

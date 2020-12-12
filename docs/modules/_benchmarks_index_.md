@@ -1,4 +1,4 @@
-[typescript-node-lib](../README.md) › ["benchmarks/index"](_benchmarks_index_.md)
+[brightid_sdk](../README.md) › ["benchmarks/index"](_benchmarks_index_.md)
 
 # Module: "benchmarks/index"
 
@@ -16,7 +16,7 @@
 
 • **benchmarkdir**: *string* = __dirname
 
-*Defined in [benchmarks/index.ts:8](https://github.com/OctoD/typescript-module-template/blob/77d3f42/benchmarks/index.ts#L8)*
+*Defined in [benchmarks/index.ts:8](https://github.com/acolytec3/brightIdSDK/blob/619bfad/benchmarks/index.ts#L8)*
 
 ___
 
@@ -24,7 +24,7 @@ ___
 
 • **benchmarks**: *string[]* = fs.readdirSync(testsdir)
 
-*Defined in [benchmarks/index.ts:10](https://github.com/OctoD/typescript-module-template/blob/77d3f42/benchmarks/index.ts#L10)*
+*Defined in [benchmarks/index.ts:10](https://github.com/acolytec3/brightIdSDK/blob/619bfad/benchmarks/index.ts#L10)*
 
 ___
 
@@ -32,4 +32,4 @@ ___
 
 • **testsdir**: *string* = path.join(benchmarkdir, 'tests')
 
-*Defined in [benchmarks/index.ts:9](https://github.com/OctoD/typescript-module-template/blob/77d3f42/benchmarks/index.ts#L9)*
+*Defined in [benchmarks/index.ts:9](https://github.com/acolytec3/brightIdSDK/blob/619bfad/benchmarks/index.ts#L9)*

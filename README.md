@@ -7,7 +7,6 @@ A typescript library for simplifying integration of applications with BrightID
 
 Exposes all necessary functions for integrating an application with BrigthID as well as testing methods to make sure its all working.
 
-
 # ⚙ Install
 
 ```bash
@@ -20,8 +19,6 @@ npm i brightid_sdk
 You can read docs [here](./docs/README.md), just remember to run your `npm run docs` script.
 
 # 🔍 Usage
-
-Put my library usage guide here
 
 Predefined scripts:
 

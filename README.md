@@ -5,7 +5,7 @@ A typescript library for simplifying integration of applications with BrightID
 
 # 🎉 Features
 
-Exposes all necessary functions for integrating an application with BrigthID as well as testing methods to make sure its all working.
+Exposes all necessary functions for integrating an application with BrightID as well as testing methods to make sure its all working.
 
 # ⚙ Install
 
@@ -29,7 +29,7 @@ Predefined scripts:
 - prepublishOnly: builds your sources for deployment (to npm)
 - size-limit: checks your bundle size limit
 - test: run tests 
-- upgrade-interactive: updgrades your dependencies interactively (like with yarn)
+- upgrade-interactive: upgrades your dependencies interactively (like with yarn)
 # 📃 Licence
 
 Read the [licence](./LICENCE)

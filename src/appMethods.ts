@@ -26,7 +26,11 @@ export const verifyContextId = async (
     return res.data.data;
   } catch (err) {
     console.log(err.response);
-    return { unique: false };
+    return {
+      status: err.response.status,
+      statusText: err.response.statusText,
+      data: err.response.data,
+    };
   }
 };
 
@@ -66,6 +70,11 @@ export const sponsor = async (
     return { status: "success", statusReason: res.data.data.hash };
   } catch (err) {
     console.log(err.response);
+    return {
+      status: err.response.status,
+      statusText: err.response.statusText,
+      data: err.response.data,
+    };
   }
 };
 

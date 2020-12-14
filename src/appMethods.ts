@@ -1,8 +1,22 @@
+// appMethods.ts
+/**
+ * This is the doc comment for file1.ts
+ * @brightid_sdk
+ */
+
 import axios from "axios";
 import stringify from "fast-json-stable-stringify";
 import B64 from "base64-js";
 import nacl from "tweetnacl";
 
+/**
+ *
+ * @param context - the application context string to create a deeplink for
+ * @param contextId - the contextId string corresponding to a specific BrightID
+ * @param nodeUrl - optional BrightID node url - of the form `http://node.brightid.org`
+ *
+ * @returns a deeplink of the form `brightid://link-verification/http://node.brightid.org/testContext/testContextId`
+ */
 export const generateDeeplink = (
   context: string,
   contextId: string,
@@ -12,6 +26,14 @@ export const generateDeeplink = (
   return `brightid://link-verification/${endpoint}/${context}/${contextId}`;
 };
 
+/**
+ *
+ * @param context - the application context in which to verify a given `contextId`'s status
+ * @param contextId - the contextId to retrieve the status of
+ * @param nodeUrl - optional BrightID node url - of the form `http://node.brightid.org`
+ *
+ * @returns An API response with a uniqueness indicator and a list of any other contextIds associated with the BrightID linked to the `contextId`
+ */
 export const verifyContextId = async (
   context: string,
   contextId: string,
@@ -34,6 +56,15 @@ export const verifyContextId = async (
   }
 };
 
+/**
+ *
+ * @param key - the sponsor private key needed for sponsoring a BrightID
+ * @param context  - the application context in which to sponsor a given BrightID
+ * @param contextId - the contextId linked to the BrightID being sponsored
+ * @param nodeUrl - optional BrightID node url - of the form `http://node.brightid.org`
+ *
+ * @returns A hash of the operation if successfully submitted to the BrightID node or an error
+ */
 export const sponsor = async (
   key: string,
   context: string,
@@ -80,6 +111,9 @@ export const sponsor = async (
   }
 };
 
+/**
+ * @ignore
+ */
 const getMessage = (op: any) => {
   const signedOp: any = {};
   for (let k in op) {
@@ -91,6 +125,13 @@ const getMessage = (op: any) => {
   return stringify(signedOp);
 };
 
+/**
+ *
+ * @param context - the application context to retrieve available sponsorships for
+ * @param nodeUrl - optional BrightID node url - of the form `http://node.brightid.org`
+ *
+ * @returns     Returns the number of sponsorships available to the specified `context`
+ */
 export const availableSponsorships = async (
   context: string,
   nodeUrl?: string

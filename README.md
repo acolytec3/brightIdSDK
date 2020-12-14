@@ -22,7 +22,6 @@ You can read docs [here](./docs/README.md), just remember to run your `npm run d
 
 Predefined scripts:
 
-- benchmarks: runs all your benchmarks
 - changelog: creates a changelog (using standard-changelog)
 - docs: creates docs from your jsdocs
 - lint: lints your code

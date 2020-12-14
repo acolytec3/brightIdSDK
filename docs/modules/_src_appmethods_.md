@@ -16,9 +16,9 @@
 
 ### `Const` availableSponsorships
 
-▸ **availableSponsorships**(`context`: string, `nodeUrl?`: undefined | string): *Promise‹number›*
+▸ **availableSponsorships**(`context`: string, `nodeUrl?`: undefined | string): *Promise‹number | any›*
 
-*Defined in [src/appMethods.ts:83](https://github.com/acolytec3/brightIdSDK/blob/619bfad/src/appMethods.ts#L83)*
+*Defined in [src/appMethods.ts:94](https://github.com/acolytec3/brightIdSDK/blob/3153f9f/src/appMethods.ts#L94)*
 
 **Parameters:**
 
@@ -27,7 +27,7 @@ Name | Type |
 `context` | string |
 `nodeUrl?` | undefined &#124; string |
 
-**Returns:** *Promise‹number›*
+**Returns:** *Promise‹number | any›*
 
 ___
 
@@ -35,7 +35,7 @@ ___
 
 ▸ **generateDeeplink**(`context`: string, `contextId`: string, `nodeUrl?`: undefined | string): *string*
 
-*Defined in [src/appMethods.ts:6](https://github.com/acolytec3/brightIdSDK/blob/619bfad/src/appMethods.ts#L6)*
+*Defined in [src/appMethods.ts:6](https://github.com/acolytec3/brightIdSDK/blob/3153f9f/src/appMethods.ts#L6)*
 
 **Parameters:**
 
@@ -53,7 +53,7 @@ ___
 
 ▸ **getMessage**(`op`: any): *string*
 
-*Defined in [src/appMethods.ts:72](https://github.com/acolytec3/brightIdSDK/blob/619bfad/src/appMethods.ts#L72)*
+*Defined in [src/appMethods.ts:83](https://github.com/acolytec3/brightIdSDK/blob/3153f9f/src/appMethods.ts#L83)*
 
 **Parameters:**
 
@@ -69,7 +69,7 @@ ___
 
 ▸ **sponsor**(`key`: string, `context`: string, `contextId`: string, `nodeUrl?`: undefined | string): *Promise‹any›*
 
-*Defined in [src/appMethods.ts:33](https://github.com/acolytec3/brightIdSDK/blob/619bfad/src/appMethods.ts#L33)*
+*Defined in [src/appMethods.ts:37](https://github.com/acolytec3/brightIdSDK/blob/3153f9f/src/appMethods.ts#L37)*
 
 **Parameters:**
 
@@ -88,7 +88,7 @@ ___
 
 ▸ **verifyContextId**(`context`: string, `contextId`: string, `nodeUrl?`: undefined | string): *Promise‹any›*
 
-*Defined in [src/appMethods.ts:15](https://github.com/acolytec3/brightIdSDK/blob/619bfad/src/appMethods.ts#L15)*
+*Defined in [src/appMethods.ts:15](https://github.com/acolytec3/brightIdSDK/blob/3153f9f/src/appMethods.ts#L15)*
 
 **Parameters:**
 

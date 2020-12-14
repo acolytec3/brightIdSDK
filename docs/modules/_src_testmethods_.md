@@ -15,7 +15,7 @@
 
 ▸ **putTestingBlock**(`operation`: string, `testingKey`: string, `context`: string, `contextId`: string, `nodeUrl?`: undefined | string): *Promise‹any›*
 
-*Defined in [src/testMethods.ts:3](https://github.com/acolytec3/brightIdSDK/blob/619bfad/src/testMethods.ts#L3)*
+*Defined in [src/testMethods.ts:3](https://github.com/acolytec3/brightIdSDK/blob/3153f9f/src/testMethods.ts#L3)*
 
 **Parameters:**
 
@@ -35,7 +35,7 @@ ___
 
 ▸ **removeTestingBlock**(`operation`: string, `testingKey`: string, `context`: string, `contextId`: string, `nodeUrl?`: undefined | string): *Promise‹any›*
 
-*Defined in [src/testMethods.ts:41](https://github.com/acolytec3/brightIdSDK/blob/619bfad/src/testMethods.ts#L41)*
+*Defined in [src/testMethods.ts:47](https://github.com/acolytec3/brightIdSDK/blob/3153f9f/src/testMethods.ts#L47)*
 
 **Parameters:**
 

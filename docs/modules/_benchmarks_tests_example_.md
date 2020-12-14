@@ -14,7 +14,7 @@
 
 ▸ **run**(`suite`: benchmark.Suite, `options`: benchmark.Options): *void*
 
-*Defined in [benchmarks/tests/example.ts:4](https://github.com/acolytec3/brightIdSDK/blob/619bfad/benchmarks/tests/example.ts#L4)*
+*Defined in [benchmarks/tests/example.ts:4](https://github.com/acolytec3/brightIdSDK/blob/3153f9f/benchmarks/tests/example.ts#L4)*
 
 **Parameters:**
 

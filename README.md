@@ -16,11 +16,13 @@ npm i brightid_sdk
 
 # 📖 Docs
 
-You can read docs [here](./docs/README.md), just remember to run your `npm run docs` script.
+You can read docs [here](./docs/README.md), just remember to run the `npm run docs` script.
 
-# 🔍 Usage
+# Contributing
 
-Predefined scripts:
+PRs always welcome!
+
+Predefined scripts in `package.json`:
 
 - changelog: creates a changelog (using standard-changelog)
 - docs: creates docs from your jsdocs

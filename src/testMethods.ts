@@ -40,7 +40,11 @@ export const putTestingBlock = async (
         return {};
     }
     console.log(res);
-    return { status: res.status, data: res.data };
+    return {
+      status: res.status,
+      statusText: "testBlock operation submitted to node successfully",
+      data: res.data,
+    };
   } catch (err) {
     console.log(err.response);
     return {
@@ -85,7 +89,11 @@ export const removeTestingBlock = async (
         return {};
     }
     console.log(res);
-    return { status: res.status, data: res.data };
+    return {
+      status: res.status,
+      statusText: "remove testBlock operation submitted to node successfully",
+      data: res.data,
+    };
   } catch (err) {
     console.log(err.response);
     return {

@@ -45,9 +45,11 @@ export const sponsor = async (
     : "https://app.brightid.org/node/v5/operations";
   let sponsorships = await availableSponsorships(context, nodeUrl);
 
-  if (sponsorships < 1) {
+  if (typeof sponsorships === "number" && sponsorships < 1) {
     return { status: "error", statusReason: "no available sponsorships" };
   }
+
+  if (typeof sponsorships !== "number") return sponsorships;
 
   const op = {
     name: "Sponsor",
@@ -92,7 +94,7 @@ const getMessage = (op: any) => {
 export const availableSponsorships = async (
   context: string,
   nodeUrl?: string
-): Promise<number> => {
+): Promise<number | any> => {
   const endpoint = nodeUrl
     ? nodeUrl + `/node/v5/testblocks`
     : "https://app.brightid.org/node/v5/apps";
@@ -102,6 +104,10 @@ export const availableSponsorships = async (
     return res.data.data.unusedSponsorships;
   } catch (err) {
     console.log(err.response);
-    return 0;
+    return {
+      status: err.response.status,
+      statusText: err.response.statusText,
+      data: err.response.data,
+    };
   }
 };

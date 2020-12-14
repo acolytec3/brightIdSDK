@@ -1,3 +1,10 @@
+# 1.0.0 (2020-12-14)
+
+### Features
+
+* Add complete documentation of exported methods
+* Add better return messaging for all methods
+
 ## 0.0.2 (2020-12-14)
 
 ### Features

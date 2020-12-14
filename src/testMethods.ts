@@ -40,7 +40,7 @@ export const putTestingBlock = async (
         return {};
     }
     console.log(res);
-    return res.data;
+    return { status: res.status, data: res.data };
   } catch (err) {
     console.log(err.response);
     return {
